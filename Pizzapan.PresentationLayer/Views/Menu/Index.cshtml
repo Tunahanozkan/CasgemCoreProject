@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_MenuHeadPartial")
+
+<body>
+    <!--header-->
+ @await Component.InvokeAsync("_MenuNavbarPartial")
+    <!--/header-->
+    <!-- Domain Modal -->
+@await Component.InvokeAsync("_MenuFooterPartial")
+    <!-- //Domain modal -->
+@await Component.InvokeAsync("_MenuSpecialPartial")
+    <!-- //menu -->
+    <!-- footers 20 -->
+@await Component.InvokeAsync("_MenuFooter2Partial")
+    <!-- move top -->
+@await Component.InvokeAsync("_MenuScriptPartial")
+
+</body>
+
+</html>

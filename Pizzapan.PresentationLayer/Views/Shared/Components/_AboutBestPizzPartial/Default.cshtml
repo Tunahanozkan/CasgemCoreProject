@@ -1,0 +1,31 @@
+﻿@model List<Category>
+<section class="w3l-form-12">
+    <div class="form-12-content py-5" id="services">
+        <div class="container py-lg-5 py-md-4">
+            <div class="row">
+                <div class="col-lg-4 column1 align-self">
+                    <h4>Şehrimizdeki En İyi Pizzaları ve Burgerleri yapıyoruz</h4>
+                    <p>
+                        Tuna Pizz Markamız Şehrimizin en ünlü ve beğenilen pizzacılarından biridir. İtalyan mutfağından esinlenen geleneksel pizzaları ve zengin malzemeleriyle bilinir.
+                        Kaliteli hamur ve taze soslar kullanarak lezzetli ve nefis pizzalar hazırlarlar. 
+                    </p>
+                </div>
+                <div class="col-lg-8 column2 mt-lg-0 mt-sm-5 mt-4">
+                    <div class="row">
+                        @foreach(var item in Model)
+                        {
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <a href="services.html">
+                                <div class="courses-item">
+                                    <img src="@item.CategoryImageUrl" alt="">
+                                    <p>@item.CategoryName</p>
+                                </div>
+                            </a>
+                        </div>
+                        } 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+﻿@model List<Product>
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="/Default/Index">Anasayfa</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Menu</li>
+        </ul>
+    </div>
+</section>
+<!-- menu -->
+<div class="agileits-services  py-5" id="menu">
+    <div class="container py-md-5">
+        <div class="title-content text-center">
+            <h6 class="sub-title">Özel Menü</h6>
+            <h3 class="title-big">Sizin İçin Özel Liste Menü</h3>
+        </div>
+        <div class="pt-lg-5 pt-4">
+            <div class="row menu-body">
+                @foreach(var item in Model)
+                {
+                    <div class="col-lg-6 menu-section pr-lg-5">
+                        <h3 class="menu-section-title">@item.CategoryName</h3>
+
+                        <div class="menu-item">
+                            <div class="row border-dot no-gutters">
+                                <div class="col-8 menu-item-name">
+                                    <h6>@item.Name</h6>
+                                </div>
+                                <div class="col-4 menu-item-price text-right">
+                                    <h6>@item.Price</h6>
+                                </div>
+                            </div>
+                            <div class="menu-item-description">
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                     </div>               
+                }
+            </div>
+        </div>
+    </div>
+</div>

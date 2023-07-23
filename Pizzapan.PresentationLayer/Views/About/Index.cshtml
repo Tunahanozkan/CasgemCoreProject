@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_AboutHeadPartial")
+
+<body>
+    <!--header-->
+@await Component.InvokeAsync("_AboutNavbarPartial")
+    <!--/header-->
+    <!-- Domain Modal -->
+ @await Component.InvokeAsync("_AboutFooterPartial")
+    <!-- //Domain modal -->
+ @await Component.InvokeAsync("_AboutFeaturePartial")
+    <!--  //Intro video popup section -->
+    <!--  form-12 -->
+@await Component.InvokeAsync("_AboutBestPizzPartial")
+    <!-- // form-12 -->
+    <!-- team -->
+@await Component.InvokeAsync("_AboutOurTeamPartial")
+    <!-- //team -->
+    <!-- stats -->
+    @await Component.InvokeAsync("_AboutHappyCusPartial")
+    <!-- //stats -->
+    <!-- features -->
+@await Component.InvokeAsync("_AboutChoosePartial")
+    <!-- //features -->
+    <!-- footers 20 -->
+@await Component.InvokeAsync("_AboutFooter2Partial")
+    <!-- move top -->
+@await Component.InvokeAsync("_AboutScriptPartial")
+
+</body>
+
+</html>
