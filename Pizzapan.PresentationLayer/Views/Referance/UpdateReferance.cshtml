@@ -1,0 +1,25 @@
+﻿@model Referance
+@{
+    ViewData["Title"] = "UpdateReferance";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<<h1>Müşteri Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ReferanceID" />
+    <label>Müşteri Ad</label>
+    <input type="text" class="form-control" asp-for="ReferanceName" style="background-color:darkgray" />
+    <br />
+    <label>Referans Mail</label>
+    <input type="text" class="form-control" asp-for="ReferanceMail" style="background-color:darkgray" />
+    <br />
+    <label>Referans Telefon</label>
+    <input type="text" class="form-control" asp-for="ReferancePhone" style="background-color:darkgray" />
+    <br />
+    <label>Referans Yorumu</label>
+    <input type="text" class="form-control" asp-for="ReferanceComment" style="background-color:darkgray" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>
+

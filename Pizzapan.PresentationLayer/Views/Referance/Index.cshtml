@@ -1,0 +1,33 @@
+﻿@model List<Referance>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Referans Listesi</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans Ad</th>
+        <th>Referans Mail</th>
+        <th>Referans Telefon</th>
+        <th>Referans Yorum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ReferanceID</td>
+            <td>@item.ReferanceName</td>
+            <td>@item.ReferanceMail</td>
+            <td>@item.ReferancePhone</td>
+            <td>@item.ReferanceComment</td>
+            <td><a href="/Referance/DeleteReferance/@item.ReferanceID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Referance/UpdateReferance/@item.ReferanceID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Referance/AddReferance" class="btn btn-outline-primary">Yeni Referans Girişi</a>
+

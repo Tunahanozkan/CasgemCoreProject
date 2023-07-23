@@ -1,0 +1,25 @@
+﻿@model Referance
+@{
+    ViewData["Title"] = "AddReferance";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Referans Ekleme Sayfası</h1>
+
+
+<form method="post">
+
+    <label>Referans Adı</label>
+    <input asp-for="ReferanceName" class="form-control" style="background-color:#b1b3b1" />
+    <br />
+    <label>Referans Mail</label>
+    <input asp-for="ReferanceMail" class="form-control" style="background-color:#b1b3b1" />
+    <br />
+    <label>Referans Telefon</label>
+    <input asp-for="ReferancePhone" class="form-control" style="background-color:#b1b3b1" />
+    <br />
+    <label>Referans Yorumu</label>
+    <input asp-for="ReferanceComment" class="form-control" style="background-color:#b1b3b1" />
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

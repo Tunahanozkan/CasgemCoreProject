@@ -1,0 +1,17 @@
+﻿@model OurTeam
+@{
+    ViewData["Title"] = "UpdateOurTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kategori Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="OurTeamID" />
+
+    <input type="text" class="form-control" asp-for="OurTeamName" style="background-color:darkgray" />
+    <br />
+    <input type="text" class="form-control" asp-for="OurTeamStatus" style="background-color:darkgray" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>
