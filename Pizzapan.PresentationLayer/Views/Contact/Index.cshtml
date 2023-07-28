@@ -12,6 +12,8 @@
         <th>#</th>
         <th>Gönderen</th>
         <th>Konu</th>
+        <th>Email</th>
+        <th>Mesaj</th>
         <th>Tarih</th>
         <th>Mesajı Sil</th>
         <th>Mesajı Gör</th>
@@ -23,9 +25,11 @@
             <td>@count</td>
             <td>@item.Name</td>
             <td>@item.Subject</td>
+            <td>@item.Email</td>
+            <td>@item.Message</td>
             <td>@(((DateTime)item.SendDateMessage).ToString("dd-MMM-yyyy"))</td>
             <td><a href="/Contact/DeleteContact/@item.ContactID" class="btn btn-outline-danger">Mesajı Sil</a></td>
-            <td> <a href="/Contact/MessageDetailsContact/@item.ContactID" class="btn btn-outline-info">Mesajı Gör</a></td>
+            <td> <a href="/Contact/ContactDetails/@item.ContactID" class="btn btn-outline-info">Mesajı Gör</a></td>
         </tr>
     }
 </table>

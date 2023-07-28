@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_ContactOtherHeadPartial")
+
+<body>
+    <!--header-->
+@await Component.InvokeAsync("_ContactOtherNavbarPartial")
+    <!--/header-->
+    <!-- Domain Modal -->
+ @await Component.InvokeAsync("_ContactOtherFeaturePartial")
+    <!-- //Domain modal -->
+@await Component.InvokeAsync("_ContactOtherContactPartial")
+    <!-- footers 20 -->
+@await Component.InvokeAsync("_ContactOtherFooterPartial")
+</body>
+
+</html>

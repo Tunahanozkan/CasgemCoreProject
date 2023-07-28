@@ -1,0 +1,70 @@
+﻿@model Contact
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="/Default/Index/">Anasayfa</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> İletişim</li>
+        </ul>
+    </div>
+</section>
+<section class="w3l-contact-11 py-5">
+    <div class="contacts-main py-lg-5 py-md-4">
+        <div class="contant11-top-bg">
+            <div class="container">
+                <div class="title-content text-center">
+                    <h6 class="sub-title">İletişim</h6>
+                    <h3 class="title-big">Bizimle İletişimi Geçin</h3>
+                </div>
+                <div class="d-grid contact section-gap mt-lg-5 mt-4">
+                    <div class="contact-info-left d-grid text-center">
+                        <div class="contact-info">
+                            <span class="fa fa-map-marker" aria-hidden="true"></span>
+                            <h4>Yol Tarihi</h4>
+                            <p>Ankara, ANK-06200 Kazım Karabekir Caddesi</p>
+                        </div>
+                        <div class="contact-info">
+                            <span class="fa fa-phone" aria-hidden="true"></span>
+                            <h4>İletişim</h4>
+                            <p><a href="tel:+1-2345-678-11">+90 554 543 19 60</a></p>
+                            <p><a href="mailto:pizza@order.com" class="email">ozkantunahn@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info">
+                            <span class="fa fa-clock-o" aria-hidden="true"></span>
+                            <h4>Açık Saatler</h4>
+                            <p>Pazartesi - Cuma</p>
+                            <p> 09:00 - 22:00 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-41-mian section-gap mt-5">
+            <div class="container">
+                <div class="d-grid align-form-map">
+                    <div class="form-inner-cont">
+                        <form method="post">
+                            <div class="form-input">
+                                <input type="text" class="form-control" asp-for="Name" placeholder="Adınız"
+                                       required="">
+                            </div>
+                            <div class="form-input">
+                                <input type="email" class="form-control" asp-for="Email" placeholder="Email"
+                                       required="">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="form-control" asp-for="Subject" placeholder="Konu" required="">
+                            </div>
+                            <div class="form-input">
+                                <textarea type="text" rows="5" class="form-control" asp-for="Message" placeholder="Mesaj"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-style mt-4">Mesajı Gönder</button>
+                        </form>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0052561159227!2d32.89621707557349!3d40.03066207904699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40820811e6e10549%3A0x9c12652c44346d8a!2zw4dhbMSxxZ9tYSB2ZSBTb3N5YWwgR8O8dmVubGlrIEXEn2l0aW0gVmUgQXJhxZ90xLFybWEgTWVya2V6aQ!5e0!3m2!1str!2str!4v1690578550134!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
